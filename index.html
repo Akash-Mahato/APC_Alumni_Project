@@ -24,6 +24,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/style.custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -75,10 +77,10 @@
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9; display: flex">
           
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav style="width:100%" class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-4">
                  <!--Logo -->
         <a class="navbar-brand" href="style.css">
-            <div class="logo-image" style="height:  100px;   width:   100px;">
+            <div class="logo-image" style="height:  70px;   width:70px;margin-top: 10px; margin-bottom:10px">
                   <img src="img/ALUMNI LOGO.png" class="img-fluid">
             </div>
         </a> 
@@ -94,7 +96,7 @@
                         <a href="about.html" class="nav-item nav-link active"><b>About</b></a>
                         <a href="service.html" class="nav-item nav-link active"><b>Gallery</b></a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Events</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><b>Events</b></a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="blog.html" class="dropdown-item">Blog Grid</a>
                                 <a href="single.html" class="dropdown-item">Blog Detail</a>
@@ -157,59 +159,55 @@
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
                 <h1>Founders (Demo Test)</h1>
             </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="text-center pb-4">
-                    <img class="img-fluid mx-auto" src="img/Akash.png" style="width: 100px; height: 100px;" >
+            <div class="owl-carousel testimonial-carousel" id="founder-cont">
+                <div class="text-center pb-4" onmouseover="max11()" onmouseleave="min11()">
+                    <img class="img-fluid mx-auto" id="akashimg" src="img/Akash.png" style="width: 200px; height: 200px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Akash Mahato</b></h5>
+                        <p id="akash" class="mt-5" style="display: none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39"><b>Akash Mahato</b></h5>
                         <span>Front-End Developer</span>
                     </div>
                 </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/Suman.png" style="width: 100px; height: 100px;" >
+                <div class="text-center"  onmouseover="max22()" onmouseleave="min22()" >
+                    <img class="img-fluid mx-auto" id="sumanimg" src="img/Suman.png" style="width: 200px; height: 200px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Suman Mandal</b></h5>
+                        <p id="suman" class="mt-5" style="display:none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39 mt-39"><b>Suman Mandal</b></h5>
                         <span>Front-End Developer</span>
                     </div>
                 </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/Sayantan.png" style="width: 100px; height: 100px;" >
+                <div class="text-center"  onmouseover="max33()" onmouseleave="min33()" >
+                    <img class="img-fluid mx-auto" id="sayantanimg" src="img/Sayantan.png" style="width: 200px; height: 200px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Sayantan Nandi</b></h5>
+                        <p id="sayantan" class="mt-5" style="display:none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39"><b>Sayantan Nandi</b></h5>
                         <span>Front-End Developer</span>
                     </div>
                 </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/Hritik.png" style="width: 100px; height: 100px;" >
+        
+                <div class="text-center" onmouseover="max44()" onmouseleave="min44()" >
+                    <img class="img-fluid mx-auto" id="writabrataimg" src="img/Writabrata.png" style="width: 200px; height: 200px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Hritik Choudhry</b></h5>
-                        <span>1/2 Stack Developer</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/Writabrata.png" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Writabrata Chakraborty</b></h5>
+                        <p id="writabrata" class="mt-5" style="display:none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39"><b>Writabrata Chakraborty</b></h5>
                         <span>Front-End Developer</span>
                     </div>
                 </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/Gaurav.png" style="width: 100px; height: 100px;" >
+                
+                <div class="text-center" onmouseover="max55()" onmouseleave="min55() ">
+                    <img class="img-fluid mx-auto" id="gauravimg" src="img/Gaurav.png" style="width: 200px; height: 200px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate"><b>Gaurav Bhagat</b></h5>
+                        <p id="gaurav" class="mt-5" style="display:none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39"><b>Gaurav Bhagat</b></h5>
                         <span>Front-End Developer</span>
+                    </div>
+                </div>
+                <div class="text-center" onmouseover="max66()" onmouseleave="min66()" >
+                    <img class="img-fluid mx-auto" id="hrithikimg" src="img/Hritik.png" style="width: 200px; height: 200px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5 ">
+                        <p id="hrithik" class="mt-5" style="display:none; height: 50px;">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <h5 class="text-truncate min mt-39"><b>Hritik Choudhury</b></h5>
+                        <span>Full Stack Developer</span>
                     </div>
                 </div>
             </div>
@@ -825,6 +823,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/utility.js"></script>
 </body>
 
 </html>

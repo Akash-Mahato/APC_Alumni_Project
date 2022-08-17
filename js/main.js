@@ -44,7 +44,7 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay:true,
         smartSpeed: 1500,
         margin: 30,
         dots: true,
@@ -67,4 +67,17 @@
     });
     
 })(jQuery);
+
+
+$(
+   "#founder-cont"
+).on("mouseover",function(){
+    console.log("stop");
+    $(".testimonial-carousel").trigger("stop.owl.autoplay")
+})
+$(
+    "#founder-cont"
+ ).on("mouseleave",function(){
+     $(".testimonial-carousel").trigger("play.owl.autoplay")
+ })
 
