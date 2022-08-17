@@ -195,9 +195,7 @@ a:hover::before{
   width: 100%;
   background-color:rgb(235, 72, 72);
 }
-.hoverw::after{
-  
-}
+
 /* a:hover {
   color: #527a20;
   text-decoration: underline;
@@ -3959,7 +3957,8 @@ input[type="button"].btn-block {
   }
 }
 
-.nav {
+
+{
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -7218,9 +7217,8 @@ button.bg-dark:focus {
   position: static !important;
 }
 
-.position-relative {
-  position: relative !important;
-}
+
+
 
 .position-absolute {
   position: absolute !important;
@@ -9543,15 +9541,8 @@ h6,
   z-index: 11;
 }
 
-.nav-bar::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 50%;
-  top: 0;
-  left: 0;
-  background: #FFFFFF;
-}
+
+
 
 .navbar-light .navbar-nav .nav-link {
   padding: 30px 15px;
@@ -9810,9 +9801,6 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-.writs:hover{
-  display: none;
 }
 .min{
   margin-top: 39px;
