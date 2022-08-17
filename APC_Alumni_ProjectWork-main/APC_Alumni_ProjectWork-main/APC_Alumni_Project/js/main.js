@@ -50,6 +50,7 @@
         dots: true,
         loop: true,
         center: true,
+        //autoplayHoverPause: true,
         responsive: {
             0:{
                 items:1
@@ -65,6 +66,7 @@
             }
         }
     });
+    
     
 })(jQuery);
 
