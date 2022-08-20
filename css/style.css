@@ -2584,7 +2584,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: ##990602;
+  color: #990602;
   background-color: #f4faec;
   border-color: #f4faec;
 }
@@ -10129,7 +10129,7 @@ h6,
 }
 
 .testimonial-carousel .owl-dots {
-  margin-top: 5px;
+  margin-top: 25px;
   text-align: center;
 }
 
