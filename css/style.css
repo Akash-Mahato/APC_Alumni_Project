@@ -10190,3 +10190,10 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+@media (max-width: 992px){
+  .my-sty-abt-us {
+    margin-top: -400px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
