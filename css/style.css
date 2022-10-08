@@ -10196,21 +10196,24 @@ h6,
 a{
   position: relative;
 }
-
-.hover1::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 30%;
-  width: 0;
-  height: 3px;
-  background-color: #000;
-  transition: all 0.3s ease-out;
+@media (min-width: 991px){
+  .hover1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease-out;
+  }
 }
-.hover1:hover::after{
-  left: 10px;
-  width: 90%;
-  background-color:rgb(235, 72, 72);
+@media (min-width: 991px){
+  .hover1:hover::after{
+    left: 10px;
+    width: 90%;
+    background-color:rgb(235, 72, 72);
+  }
 }
 
 .ghonta{
@@ -10249,4 +10252,7 @@ a{
   background-color: white;
   border-color: white;
   border: none;
+}
+@media (min-width: 991px){
+
 }
